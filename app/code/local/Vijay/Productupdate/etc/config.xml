@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Vijay_Productupdate>
+            <version>1.0.0</version>
+        </Vijay_Productupdate>
+    </modules> 
+    <global>
+        <blocks>
+            <productupdate>
+                <class>Vijay_Productupdate_Block</class>
+            </productupdate>
+        </blocks>
+        <helpers>
+            <productupdate>
+                <class>Vijay_Productupdate_Helper</class>
+            </productupdate>
+        </helpers>
+    </global>
+    <admin>
+        <routers>
+            <productupdate>
+                <use>admin</use>
+                <args>
+                    <module>Vijay_Productupdate</module>
+                    <frontName>productupdate</frontName>
+                </args>
+            </productupdate>
+        </routers>
+    </admin>
+</config>
