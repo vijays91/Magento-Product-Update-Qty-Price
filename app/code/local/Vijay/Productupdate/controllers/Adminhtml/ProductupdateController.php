@@ -39,7 +39,9 @@ class Vijay_productupdate_Adminhtml_productupdateController extends Mage_Adminht
 	public function savePriceAction() {
 		ini_set('memory_limit', '2048M');
 		ini_set('max_execution_time', 0);
-
+		
+		//set_time_limit(24 * 60 * 60);
+		
 		$allowed =  array('csv');
 		$filename = $_FILES['price']['name'];
 		$ext = pathinfo($filename, PATHINFO_EXTENSION);
